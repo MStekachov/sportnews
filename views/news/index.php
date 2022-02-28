@@ -29,17 +29,18 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'description:ntext',
             'content:ntext',
+            'pic',
             'status',
             //'created_dt',
             //'updated_dt',
             //'published_dt',
             //'comments:ntext',
-            [
+/*            [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, News $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
-            ],
+            ],*/
         ],
     ]); ?>
 

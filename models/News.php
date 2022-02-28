@@ -11,6 +11,7 @@ use Yii;
  * @property string $title
  * @property string $description
  * @property string $content
+ * @property string $pic
  * @property int|null $status
  * @property string|null $created_dt
  * @property string|null $updated_dt
@@ -34,7 +35,7 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'description', 'content'], 'required'],
-            [['description', 'content', 'comments'], 'string'],
+            [['description', 'content', 'pic', 'comments'], 'string'],
             [['status'], 'integer'],
             [['created_dt', 'updated_dt', 'published_dt'], 'safe'],
             [['title'], 'string', 'max' => 255],
@@ -48,9 +49,10 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
+            'title' => 'Название',
             'description' => 'Description',
-            'content' => 'Content',
+            'content' => 'Содержание',
+            'pic' => 'Изображение',
             'status' => 'Status',
             'created_dt' => 'Created Dt',
             'updated_dt' => 'Updated Dt',
