@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'description:ntext',
             'content:ntext',
+            'pic:image',
             'status',
             'created_dt',
             'updated_dt',

@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
+use app\models\News;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -24,8 +25,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
             'title',
             'description:ntext',
             'content:ntext',
@@ -35,12 +34,12 @@ $this->params['breadcrumbs'][] = $this->title;
             //'updated_dt',
             //'published_dt',
             //'comments:ntext',
-/*            [
+            [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, News $model, $key, $index, $column) {
+                'urlCreator' => function ($action, $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
-            ],*/
+            ],
         ],
     ]); ?>
 

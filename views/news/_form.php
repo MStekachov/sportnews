@@ -18,18 +18,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'status')->textInput() ?>
-
-    <?= $form->field($model, 'created_dt')->textInput() ?>
-
-    <?= $form->field($model, 'updated_dt')->textInput() ?>
-
-    <?= $form->field($model, 'published_dt')->textInput() ?>
 
     <?= $form->field($model, 'comments')->textarea(['rows' => 6]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

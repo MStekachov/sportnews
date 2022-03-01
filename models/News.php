@@ -35,7 +35,7 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'description', 'content'], 'required'],
-            [['description', 'content', 'pic', 'comments'], 'string'],
+            [['description', 'content', 'comments'], 'string'],
             [['status'], 'integer'],
             [['created_dt', 'updated_dt', 'published_dt'], 'safe'],
             [['title'], 'string', 'max' => 255],
